@@ -1,6 +1,6 @@
 $(document).ready(function () {
     $(".advantages__price ul:nth-child(2) li").slice(1).show(1000);
-    
+    if ($(window).width() <= 705){
     $(".advantages__price ul:first-child").click(function () {
         if ($(this).not(".advantages__price1__anim_in")) {
             $(this).removeClass("advantages__price1__anim_out").addClass("advantages__price1__anim_in");
@@ -31,4 +31,4 @@ $(document).ready(function () {
             $(".advantages__price ul:nth-child(3) li").slice(1).show(500);
         }
     });
-});
+}});
